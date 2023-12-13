@@ -1,0 +1,94 @@
+.frontend-section {
+  margin: -25px;
+  display: flex;
+  justify-content: center;
+  background-color: #141213;
+  font-size: 100px;
+  font-family: "Source Code Pro", monospace;
+  color: rgb(240, 240, 240);
+  font-weight: 900;
+  line-height: 30px;
+  width: auto;
+  height: 100%;
+}
+.frontend-title-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 7vw;
+  margin-bottom: 15px;
+  flex-direction: column;
+  width: 100%;
+  /* border: #fff dotted 5px; */
+}
+
+.indent {
+  margin-top: -40px;
+  vertical-align: 35px;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* or space-around */
+  width: auto;
+}
+
+.frontend-skills-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  width: calc(33% - 20px);
+  color: #fff;
+}
+.frontend-skills-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: calc(33% - 20px);
+  color: #fff;
+}
+
+.frontend-image {
+  display: flex;
+  margin-top: -150px;
+  width: calc(33% - 20px);
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.frontend-photo {
+  width: 65%;
+  filter: grayscale(30%);
+}
+
+.frontend-body-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.frontend-body-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: lighter;
+  line-height: 100%;
+  margin-bottom: 5px;
+}
+.frontend-body {
+  display: flex;
+  text-align: center;
+  color: aliceblue;
+  width: 50%;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 100%;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
