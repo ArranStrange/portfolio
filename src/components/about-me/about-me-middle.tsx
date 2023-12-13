@@ -2,7 +2,7 @@ import "./about-me.css";
 
 function AboutMeMiddle() {
   return (
-    <div className="middle-container">
+    <div className="about-me-middle-container">
       <div className="about-me-skills-left">
         <ul>Javascript</ul>
         <ul>Typescript</ul>

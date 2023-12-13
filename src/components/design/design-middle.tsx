@@ -2,7 +2,7 @@ import "./design.css";
 
 function DesignMiddle() {
   return (
-    <div className="middle-container">
+    <div className="design-middle-container">
       <div className="design-skills-left">
         <ul>Adobe Photoshop</ul>
         <ul>Adobe Illustrator</ul>

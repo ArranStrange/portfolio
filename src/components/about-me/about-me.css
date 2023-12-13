@@ -27,11 +27,12 @@
   vertical-align: 35px;
 }
 
-.middle-container {
+.about-me-middle-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between; /* or space-around */
   width: auto;
+  margin-top: -150px;
 }
 
 .about-me-skills-left {
@@ -53,14 +54,14 @@
 
 .about-me-image {
   display: flex;
-  margin-top: -150px;
+  margin-top: -50px;
   width: calc(33% - 20px);
   justify-content: center;
   align-items: center;
   object-fit: cover;
 }
 .about-me-photo {
-  width: 65%;
+  width: 75%;
   filter: grayscale(30%);
 }
 
