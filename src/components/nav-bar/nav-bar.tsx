@@ -15,6 +15,9 @@ function NavBar() {
           <Link to="./design">Design & UI/UX</Link>
         </li>
         <li>
+          <Link to="./git-hub">Git Hub</Link>
+        </li>
+        <li>
           <Link to="">Contact</Link>
         </li>
       </ul>

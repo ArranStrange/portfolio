@@ -14,7 +14,6 @@ nav {
   width: 100%;
   height: fit-content;
   background: #141213;
-  /* margin-left: -30px; */
   align-items: center;
 }
 
@@ -52,6 +51,9 @@ nav li:nth-child(2) a {
 nav li:nth-child(3) a {
   border-left: 5px solid #ffffff;
 }
+nav li:nth-child(4) a {
+  border-left: 5px solid #ffffff;
+}
 nav li:last-child a {
   border-left: 5px solid #ffffff;
 }
@@ -68,8 +70,6 @@ nav li a:after {
   z-index: -1;
 }
 
-/* reduce to one classname if different colors not wanted*/
-
 nav li a:hover:after {
   width: 100%;
 }
@@ -80,6 +80,9 @@ nav li:nth-child(2) a:after {
   background: #ffffff;
 }
 nav li:nth-child(3) a:after {
+  background: #ffffff;
+}
+nav li:nth-child(4) a:after {
   background: #ffffff;
 }
 nav li:last-child a:after {

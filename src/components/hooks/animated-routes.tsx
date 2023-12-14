@@ -5,6 +5,7 @@ import Design from "../design/design-main";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 import "./animated-routes.css";
+import GitHub from "../git-hub/git-hub-main";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -22,6 +23,7 @@ function AnimatedRoutes() {
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/frontend" element={<Frontend />} />
         <Route path="/design" element={<Design />} />
+        <Route path="/git-hub" element={<GitHub />} />
         {/* <motion.div
           className="slide-out"
           initial={{ scaleY: 1 }}
