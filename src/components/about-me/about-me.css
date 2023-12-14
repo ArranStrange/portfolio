@@ -1,5 +1,20 @@
+/* SMOOTH SCROLLING CONTROLS */
+.about-me-page-container {
+  position: relative;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: auto;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* FIRST SECTION */
 .about-me-section {
-  margin: -25px;
   display: flex;
   justify-content: center;
   background-color: #141213;
@@ -9,14 +24,12 @@
   font-weight: 900;
   line-height: 30px;
   width: auto;
-  height: 100%;
 }
 .about-me-title-container {
   display: flex;
   justify-content: center;
   overflow: hidden;
   font-size: 7vw;
-  margin-bottom: 15px;
   flex-direction: column;
   width: 100%;
   /* border: #fff dotted 5px; */
@@ -27,12 +40,13 @@
   vertical-align: 35px;
 }
 
-.about-me-middle-container {
+.about-me-landing-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between; /* or space-around */
   width: auto;
   margin-top: -150px;
+  height: 500px;
 }
 
 .about-me-skills-left {
@@ -91,5 +105,66 @@
   font-size: 15px;
   font-weight: lighter;
   line-height: 100%;
-  margin-bottom: 5px;
+}
+
+.about-me-landing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* or space-around */
+  width: auto;
+  height: 470px;
+}
+
+/* MIDDLE SECTION */
+.about-me-middle-container {
+  display: flex;
+  justify-content: center; /* or space-around */
+  align-content: center;
+  width: auto;
+  height: 720px;
+  background-color: white;
+}
+
+.about-me-middle-content {
+  display: flex;
+  justify-content: center; /* or space-around */
+  align-content: center;
+  width: 50%;
+}
+
+/* BOTTOM SECTION */
+.about-me-bottom-container {
+  display: flex;
+  justify-content: center; /* or space-around */
+  align-content: center;
+  width: auto;
+  height: 720px;
+  background-color: #141213;
+  color: #fff;
+}
+
+.about-me-bottom-content {
+  display: flex;
+  justify-content: center; /* or space-around */
+  align-content: center;
+  width: 50%;
+}
+
+/* SMOOTH SCROLLING CONTROLS */
+.about-me-scroll-section-1 {
+  /* position: relative; */
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.about-me-scroll-section-2 {
+  /* position: relative; */
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.about-me-scroll-section-3 {
+  /* position: end; */
+  scroll-snap-align: start;
+  position: relative;
 }

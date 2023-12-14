@@ -17,3 +17,7 @@
   background-color: black;
   transform-origin: top;
 }
+
+.scrol {
+  scroll-behavior: smooth;
+}

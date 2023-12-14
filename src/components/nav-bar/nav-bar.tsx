@@ -1,24 +1,24 @@
 import "./nav-bar.css";
-import { Link } from "react-router-dom";
+import { Link as LinkRouter } from "react-router-dom";
 
 function NavBar() {
   return (
     <nav>
       <ul>
         <li>
-          <Link to="./about-me">Home</Link>
+          <LinkRouter to="./about-me">Home</LinkRouter>
         </li>
         <li>
-          <Link to="./frontend">Frontend</Link>
+          <LinkRouter to="./frontend">Frontend</LinkRouter>
         </li>
         <li>
-          <Link to="./design">Design & UI/UX</Link>
+          <LinkRouter to="./design">Design & UI/UX</LinkRouter>
         </li>
         <li>
-          <Link to="./git-hub">Git Hub</Link>
+          <LinkRouter to="./git-hub">Git Hub</LinkRouter>
         </li>
         <li>
-          <Link to="">Contact</Link>
+          <LinkRouter to="">Contact</LinkRouter>
         </li>
       </ul>
     </nav>
