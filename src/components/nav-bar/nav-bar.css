@@ -3,6 +3,7 @@ body {
   padding: 0px;
   background-color: #141213;
   font-family: "Source Code Pro", monospace;
+  z-index: 999;
 }
 
 nav {
