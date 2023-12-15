@@ -1,7 +1,8 @@
 import GitHubHeader from "./git-hub-header";
 import GitHubBody from "./git-hub-body";
-import GitHubMiddle from "./git-hub-middle";
+import GitHubLanding from "./git-hub-landing";
 import { motion } from "framer-motion";
+import GitHubMiddle from "./git-hub-middle";
 
 function GitHub() {
   return (
@@ -15,12 +16,19 @@ function GitHub() {
         ease: [0, 0.71, 0.2, 1.01],
       }}
     >
-      <GitHubHeader />
-      <GitHubHeader />
-      <GitHubHeader />
-      <GitHubHeader />
-      <GitHubMiddle />
-      <GitHubBody />
+      <div className="git-hub-page-container">
+        <div className="about-me-scroll-section-1">
+          <GitHubHeader />
+          <GitHubHeader />
+          <GitHubHeader />
+          <GitHubHeader />
+          <GitHubLanding />
+          <GitHubBody />
+        </div>
+        <div className="about-me-scroll-section-2">
+          <GitHubMiddle />
+        </div>
+      </div>
     </motion.div>
   );
 }

@@ -2,7 +2,7 @@ import "./App.css";
 
 import NavBar from "./components/nav-bar/nav-bar";
 
-import AnimatedRoutes from "./components/hooks/animated-routes";
+import AnimatedRoutes from "./components/hooks/animated-routes/animated-routes";
 
 function App() {
   return (

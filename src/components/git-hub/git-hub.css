@@ -1,3 +1,14 @@
+/* SMOOTH SCROLLING CONTROLS */
+.git-hub-page-container {
+  position: relative;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100%;
+}
+
 .git-hub-section {
   margin: -25px;
   display: flex;
@@ -11,6 +22,8 @@
   width: auto;
   height: 100%;
 }
+
+/* FIRST SECTION */
 .git-hub-title-container {
   display: flex;
   justify-content: center;
@@ -27,21 +40,31 @@
   vertical-align: 35px;
 }
 
-.git-hub-middle-container {
+.git-hub-landing-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   width: auto;
   margin-top: 50px;
+  height: 450px;
+}
+.git-hub-profile-picture {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin-top: -100px;
+  margin-bottom: 20px;
+  filter: grayscale(30%);
 }
 
 .git-hub-image {
   display: flex;
-  margin-top: -50px;
+  margin-top: -150px;
   width: calc(33% - 20px);
   justify-content: center;
   align-items: center;
   object-fit: cover;
+  filter: grayscale(30%);
 }
 .git-hub-photo {
   width: 75%;
@@ -75,4 +98,33 @@
   font-weight: lighter;
   line-height: 100%;
   margin-bottom: 5px;
+}
+
+/* MIDDLE SECTION */
+.about-me-middle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Use align-items instead of align-content */
+  width: auto;
+  height: 720px;
+  background-color: white;
+}
+
+.about-me-middle-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items along the cross-axis */
+  width: 50%;
+}
+
+.repositories-list {
+  border: #141213;
+  border-radius: 20px;
+}
+
+.repositories {
+  border: #141213;
+}
+
+.git-hub-repos {
 }
