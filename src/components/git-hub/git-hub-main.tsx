@@ -3,6 +3,7 @@ import GitHubBody from "./git-hub-body";
 import GitHubLanding from "./git-hub-landing";
 import { motion } from "framer-motion";
 import GitHubMiddle from "./git-hub-middle";
+import GitHubBottom from "./git-hub-bottom";
 
 function GitHub() {
   return (
@@ -27,6 +28,9 @@ function GitHub() {
         </div>
         <div className="about-me-scroll-section-2">
           <GitHubMiddle />
+        </div>
+        <div className="about-me-scroll-section-3">
+          <GitHubBottom />
         </div>
       </div>
     </motion.div>

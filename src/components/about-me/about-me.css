@@ -46,6 +46,7 @@
   justify-content: space-between; /* or space-around */
   width: auto;
   margin-top: -150px;
+  margin-bottom: 10px;
 }
 
 .about-me-skills-left {
@@ -107,21 +108,13 @@
   line-height: 100%;
 }
 
-.about-me-landing-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* or space-around */
-  width: auto;
-  height: 470px;
-}
-
 /* MIDDLE SECTION */
 .about-me-middle-container {
   display: flex;
   justify-content: center;
   align-items: center; /* Use align-items instead of align-content */
   width: auto;
-  height: 720px;
+  height: 710px;
   background-color: white;
 }
 
