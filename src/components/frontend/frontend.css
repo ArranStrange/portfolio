@@ -1,3 +1,15 @@
+/* SMOOTH SCROLLING CONTROLS */
+.frontend-page-container {
+  position: relative;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100%;
+}
+
+/* FIRST SECTION */
 .frontend-section {
   margin: -25px;
   display: flex;
@@ -11,6 +23,8 @@
   width: auto;
   height: 100%;
 }
+
+/* TITLE CONTAINER */
 .frontend-title-container {
   display: flex;
   justify-content: center;
@@ -27,13 +41,16 @@
   vertical-align: 35px;
 }
 
-.frontend-middle-container {
+/* FRONT PAGE LANDING SCREEN */
+.frontend-landing-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between; /* or space-around */
   width: 75%;
   margin: -200px 200px 0px 200px;
+  width: auto;
+  height: 610px;
 }
 .images-first-row {
   display: flex;
@@ -45,14 +62,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between; /* or space-around */
+  padding-bottom: 50px;
 }
 
-.frontend-image {
-  display: flex;
-  margin-top: -50px;
-  justify-content: center;
-  align-items: center;
-}
 .frontend-photos {
   width: 15%;
   justify-content: space-between;
@@ -60,7 +72,7 @@
   border-radius: 20px;
 }
 
-.frontend-body-container {
+.frontend-middle-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -77,14 +89,79 @@
   line-height: 100%;
   margin-bottom: 5px;
 }
+
+/* MIDDLE SECTION */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.frontend-middle-container {
+  display: flex;
+  width: auto;
+  background-color: white;
+  height: 100vh;
+  justify-content: center;
+}
+
+.frontend-middle-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 900;
+  /* border: 10px dotted black; */
+}
 .frontend-body {
   display: flex;
   text-align: center;
-  color: aliceblue;
-  width: 50%;
+  color: black;
+  width: 75%;
   font-size: 15px;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 100%;
   margin-bottom: 5px;
   margin-top: 20px;
+  /* border: 10px dotted black; */
+}
+
+/* BOTTOM SECTION */
+.frontend-bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Use align-items instead of align-content */
+  width: auto;
+  height: 710px;
+  background-color: #141213;
+  color: #fff;
+}
+
+.frontend-bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items along the cross-axis */
+  width: 50%;
+}
+
+/* SMOOTH SCROLLING CONTROLS */
+.about-me-scroll-section-1 {
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.about-me-scroll-section-2 {
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.about-me-scroll-section-3 {
+  position: relative;
+  scroll-snap-align: start;
 }

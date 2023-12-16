@@ -1,7 +1,9 @@
-import FrontendBody from "./frontend-body";
 import FrontendHeader from "./frontend-header";
-import FrontendMiddle from "./frontend-middle";
+import FrontendLanding from "./frontend-landing";
 import { motion } from "framer-motion";
+import FrontendMiddle from "./frontend-middle";
+import FrontendBottom from "./fronend-bottom";
+import "./frontend.css";
 
 function Frontend() {
   return (
@@ -15,12 +17,21 @@ function Frontend() {
         ease: [0, 0.71, 0.2, 1.01],
       }}
     >
-      <FrontendHeader />
-      <FrontendHeader />
-      <FrontendHeader />
-      <FrontendHeader />
-      <FrontendMiddle />
-      <FrontendBody />
+      <div className="frontend-page-container">
+        <div className="about-me-scroll-section-1">
+          <FrontendHeader />
+          <FrontendHeader />
+          <FrontendHeader />
+          <FrontendHeader />
+          <FrontendLanding />
+        </div>
+        <div className="about-me-scroll-section-2">
+          <FrontendMiddle />
+        </div>
+        <div className="about-me-scroll-section-3">
+          <FrontendBottom />
+        </div>
+      </div>
     </motion.div>
   );
 }

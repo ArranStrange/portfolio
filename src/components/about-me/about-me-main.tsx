@@ -1,9 +1,9 @@
 import AboutMeHeader from "./about-me-header";
-import AboutMeBody from "./about-me-body";
 import AboutMeLanding from "./about-me-landing";
 import { motion } from "framer-motion";
 import AboutMeBottom from "./about-me-bottom";
 import AboutMeMiddle from "./about-me-middle";
+import "./about-me.css";
 
 function AboutMe() {
   return (
@@ -24,7 +24,6 @@ function AboutMe() {
           <AboutMeHeader />
           <AboutMeHeader />
           <AboutMeLanding />
-          <AboutMeBody />
         </div>
 
         <div className="about-me-scroll-section-2">
