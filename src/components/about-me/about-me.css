@@ -109,6 +109,15 @@
 }
 
 /* MIDDLE SECTION */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .about-me-middle-container {
   width: auto;
   background-color: white;
@@ -117,6 +126,7 @@
 .about-me-middle-content {
   justify-content: center;
   align-items: center;
+  color: black;
   font-family: "Source Code Pro", monospace;
   font-size: 30px;
   line-height: 50px;
