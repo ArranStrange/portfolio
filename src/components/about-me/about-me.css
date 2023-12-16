@@ -110,19 +110,20 @@
 
 /* MIDDLE SECTION */
 .about-me-middle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Use align-items instead of align-content */
   width: auto;
-  height: 710px;
   background-color: white;
 }
 
 .about-me-middle-content {
-  display: flex;
   justify-content: center;
-  align-items: center; /* Align items along the cross-axis */
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 900;
+  margin-top: -100px;
   width: 50%;
+  /* border: 10px dotted black; */
 }
 
 /* BOTTOM SECTION */
@@ -131,7 +132,7 @@
   justify-content: center;
   align-items: center; /* Use align-items instead of align-content */
   width: auto;
-  height: 720px;
+  height: 710px;
   background-color: #141213;
   color: #fff;
 }
