@@ -13,6 +13,7 @@ function AboutMeMiddle() {
   // import Motion Framer useAnimation hook
   // import inView from react-intersection-observer to ref view point - returns boolean true if in view, false if not.
   const controls = useAnimation();
+  // inView used as reference to trigger useEffect when components are in view
   const [ref, inView] = useInView();
   useEffect(() => {
     // if statement to set use object visible when useInView hoot return true
@@ -31,7 +32,7 @@ function AboutMeMiddle() {
         variants={fadeInVariants}
         className="about-me-middle-content"
       >
-        <h1>UK BASED FRONTEND DEV & UI/UX DESIGNER</h1>
+        <h1>CARDIFF BASED FRONTEND WEB DEVELOPER</h1>
       </motion.div>
     </div>
   );

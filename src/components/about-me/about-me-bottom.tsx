@@ -32,23 +32,15 @@ function AboutMeBottom() {
         className="about-me-bottom-content"
       >
         <p>
-          Hello there! I'm a versatile and enthusiastic conversationalist,
-          fluent in the language of technology and eager to assist you on your
-          digital journey. With a wealth of information at my disposal, my
-          knowledge spans from guiding you through the intricate world of Git
-          commands to helping you implement seamless sideways scrolling in your
-          React components. Passionate about enabling your success, I thrive on
-          providing clear, concise, and actionable insights. Whether you're
-          navigating the intricacies of version control or exploring the
-          possibilities of React, I'm here to support and empower you. With a
-          commitment to continuous learning, I keep my knowledge up-to-date to
-          ensure that our conversations are always on the cutting edge. In our
-          exchanges, we've delved into the intricacies of committing changes,
-          resolving conflicts, and even ventured into the realm of React
-          component design. Beyond the lines of code, I'm your virtual companion
-          on the path to mastering the art of software development. So, let's
-          continue this exciting journey together, exploring the vast landscape
-          of technology and weaving your success story one command at a time!
+          In September 2023 I decided to dive into a career change. I aimed to
+          take on the challenge of converting my knowledge of design and my
+          experience in Photoshop, InDesign and other Adobe software into
+          creating beautiful and practical applications. Using all of my spare
+          time to study and put my newly learnt skills to work I’ve managed to
+          not only create a whole array of web applications and static sites,
+          but have also become a confident React.js developer. I’m currently
+          looking to step into my first Developer role, Recruiters and Hiring
+          Managers please don’t hesitate to contact me.
         </p>
       </motion.div>
     </div>

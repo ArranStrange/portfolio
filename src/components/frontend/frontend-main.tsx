@@ -1,9 +1,11 @@
 import FrontendHeader from "./frontend-header";
-import FrontendLanding from "./frontend-landing";
 import { motion } from "framer-motion";
 import FrontendMiddle from "./frontend-middle";
-import FrontendBottom from "./fronend-bottom";
+import FrontendAbout from "./frontend-about";
 import "./frontend.css";
+import FrontendWeatherApp from "./frontend-WeatherApp";
+import FrontendSinNombre from "./frontend-SinNombre";
+import FrontendToDoList from "./frontend-ToDoList";
 
 function Frontend() {
   return (
@@ -18,18 +20,23 @@ function Frontend() {
       }}
     >
       <div className="frontend-page-container">
-        <div className="about-me-scroll-section-1">
+        <div className="scroll-section">
           <FrontendHeader />
-          <FrontendHeader />
-          <FrontendHeader />
-          <FrontendHeader />
-          <FrontendLanding />
         </div>
-        <div className="about-me-scroll-section-2">
+        <div className="scroll-section">
           <FrontendMiddle />
         </div>
-        <div className="about-me-scroll-section-3">
-          <FrontendBottom />
+        <div className="scroll-section">
+          <FrontendAbout />
+        </div>
+        <div className="scroll-section">
+          <FrontendWeatherApp />
+        </div>
+        <div className="scroll-section">
+          <FrontendToDoList />
+        </div>
+        <div className="scroll-section">
+          <FrontendSinNombre />
         </div>
       </div>
     </motion.div>

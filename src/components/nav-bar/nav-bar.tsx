@@ -12,7 +12,7 @@ function NavBar() {
           <LinkRouter to="./frontend">Frontend</LinkRouter>
         </li>
         <li>
-          <LinkRouter to="./design">Design & UI/UX</LinkRouter>
+          <LinkRouter to="./design">Design</LinkRouter>
         </li>
         <li>
           <LinkRouter to="./git-hub">Git Hub</LinkRouter>

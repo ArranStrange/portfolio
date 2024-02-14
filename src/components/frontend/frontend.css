@@ -6,88 +6,52 @@
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   height: 100vh;
-  width: 100%;
+  width: 100lvw;
+  /* border: #fff solid 5px; */
 }
 
 /* FIRST SECTION */
 .frontend-section {
-  margin: -25px;
   display: flex;
-  justify-content: center;
   background-color: #141213;
-  font-size: 100px;
   font-family: "Source Code Pro", monospace;
+  justify-content: center;
   color: rgb(240, 240, 240);
-  font-weight: 900;
-  line-height: 30px;
   width: auto;
-  height: 100%;
+  height: 95lvh;
+  /* border: #fff solid 5px; */
 }
 
 /* TITLE CONTAINER */
 .frontend-title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  font-size: 7vw;
-  margin-bottom: 15px;
+  text-align: start;
   flex-direction: column;
-  width: 100%;
-  /* border: #fff dotted 5px; */
+  height: 100%;
+  /* border: #fff solid 5px; */
 }
 
-.indent {
-  margin-top: -40px;
-  vertical-align: 35px;
-}
-
-/* FRONT PAGE LANDING SCREEN */
-.frontend-landing-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between; /* or space-around */
-  width: 75%;
-  margin: -200px 200px 0px 200px;
-  width: auto;
-  height: 610px;
-}
-.images-first-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* or space-around */
-  margin-bottom: 25px;
-}
-.images-second-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* or space-around */
+.arrow {
+  position: absolute;
+  bottom: 0;
   padding-bottom: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  opacity: 0.8;
 }
-
-.frontend-photos {
-  width: 15%;
-  justify-content: space-between;
-  filter: grayscale(30%);
-  border-radius: 20px;
-}
-
-.frontend-middle-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.frontend-body-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  font-size: 25px;
-  font-weight: lighter;
-  line-height: 100%;
-  margin-bottom: 5px;
+.arrowUp {
+  position: absolute;
+  top: 0;
+  padding-top: 75px;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  opacity: 0.8;
 }
 
 /* MIDDLE SECTION */
@@ -100,45 +64,34 @@
     opacity: 1;
   }
 }
-.frontend-middle-container {
+.frontend-white-container {
   display: flex;
-  width: auto;
+  align-items: center;
+  flex-direction: column;
   background-color: white;
-  height: 100vh;
-  justify-content: center;
+  height: 95lvh;
+  width: 100%;
+  /* border: 6px solid green; */
 }
 
-.frontend-middle-content {
+.frontend-middle-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: black;
-  font-family: "Source Code Pro", monospace;
-  font-size: 30px;
-  line-height: 50px;
-  font-weight: 900;
-  /* border: 10px dotted black; */
-}
-.frontend-body {
-  display: flex;
-  text-align: center;
-  color: black;
-  width: 75%;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 100%;
-  margin-bottom: 5px;
-  margin-top: 20px;
+  align-items: end;
+  color: #141213;
+  width: 100lvw;
+  height: 80lvh;
   /* border: 10px dotted black; */
 }
 
 /* BOTTOM SECTION */
-.frontend-bottom-container {
+.frontend-black-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Use align-items instead of align-content */
-  width: auto;
-  height: 710px;
+  align-items: center;
+  width: 100vlw;
+  height: 100lvh;
   background-color: #141213;
   color: #fff;
 }
@@ -146,22 +99,26 @@
 .frontend-bottom-content {
   display: flex;
   justify-content: center;
-  align-items: center; /* Align items along the cross-axis */
+  align-items: center;
   width: 50%;
 }
 
-/* SMOOTH SCROLLING CONTROLS */
-.about-me-scroll-section-1 {
-  position: relative;
-  scroll-snap-align: start;
+.project-video {
+  margin-top: -50px;
+  width: 60%;
+  border-radius: 30px;
+  border: solid 2px white;
+}
+.description {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* border: solid 3px white; */
 }
 
-.about-me-scroll-section-2 {
-  position: relative;
-  scroll-snap-align: start;
-}
-
-.about-me-scroll-section-3 {
-  position: relative;
-  scroll-snap-align: start;
+@media screen and (max-width: 720px) {
+  .project-video {
+    width: 95%;
+  }
 }

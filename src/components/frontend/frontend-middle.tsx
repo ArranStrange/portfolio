@@ -2,10 +2,11 @@ import "./frontend.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 // Motion Framer object to control visible & hidden
 const fadeInVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 2 } },
   hidden: { opacity: 0, scale: 1 },
 };
 
@@ -23,20 +24,78 @@ function FrontendMiddle() {
   }, [controls, inView]);
 
   return (
-    <div className="frontend-middle-container">
+    <div className="frontend-white-container">
+      <div className="frontend-middle-text">
+        <motion.div
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={fadeInVariants}
+          className="frontend-middle-text"
+        >
+          <motion.h3
+            ref={ref}
+            initial={{ x: -1000, opacity: 1 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
+            transition={{ duration: 1, type: "tween", delay: inView ? 0 : 2 }}
+          >
+            HTML
+          </motion.h3>
+          <motion.h3
+            ref={ref}
+            initial={{ x: -2000, opacity: 1 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
+            transition={{ duration: 1, type: "tween", delay: 0.2 }}
+            style={{ marginTop: "-10px" }}
+          >
+            CSS
+          </motion.h3>
+          <motion.h3
+            ref={ref}
+            initial={{ x: -2000, opacity: 1 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
+            transition={{ duration: 1, type: "tween", delay: 0.4 }}
+            style={{ marginTop: "-10px" }}
+          >
+            TAILWIND
+          </motion.h3>
+          <motion.h3
+            ref={ref}
+            initial={{ x: -2000, opacity: 1 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
+            transition={{ duration: 1, type: "tween", delay: 0.6 }}
+            style={{ marginTop: "-10px" }}
+          >
+            JAVASCRIPT
+          </motion.h3>
+          <motion.h3
+            ref={ref}
+            initial={{ x: -2000, opacity: 1 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
+            transition={{ duration: 1, type: "tween", delay: 0.8 }}
+            style={{ marginTop: "-10px" }}
+          >
+            TYPESCRIPT
+          </motion.h3>
+          <motion.h3
+            ref={ref}
+            initial={{ x: -2000, opacity: 1 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
+            transition={{ duration: 1, type: "tween", delay: 0.1 }}
+            style={{ marginTop: "-10px" }}
+          >
+            REACT
+          </motion.h3>
+        </motion.div>
+      </div>
       <motion.div
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        variants={fadeInVariants}
-        className="frontend-middle-content"
+        className="arrow"
+        initial={{ y: "-100vh", x: -20, opacity: 0 }}
+        animate={inView ? { y: 0, opacity: 1 } : { y: -1000 }}
+        transition={{ delay: 0.2, duration: 1, type: "tween" }}
+        style={{ marginTop: "-20px" }}
       >
-        <div className="frontend-body">
-          From HTML and CSS beginnings, I embraced React and became a responsive
-          design advocate. Evolving with TypeScript, I navigated complex
-          challenges, prioritizing cross-browser compatibility. In agile
-          environments, I collaborated with tools like Webpack and Git.
-        </div>
+        <MdOutlineKeyboardDoubleArrowDown className="arrow" />
       </motion.div>
     </div>
   );

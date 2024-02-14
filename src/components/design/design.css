@@ -8,18 +8,26 @@
   color: rgb(240, 240, 240);
   font-weight: 900;
   line-height: 30px;
-  width: auto;
-  height: 100%;
+  width: 100lvw;
+  height: 20%;
 }
+
 .design-title-container {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  font-size: 7vw;
-  margin-bottom: 15px;
+  font-size: 5rem;
+  /* margin-bottom: 15px; */
   flex-direction: column;
-  width: 100%;
-  /* border: #fff dotted 5px; */
+  width: 100vw;
+  height: 50px;
+  border: #fff dotted 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .design-title-container {
+    font-size: 4rem;
+  }
 }
 
 .indent {

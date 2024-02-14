@@ -19,10 +19,6 @@ function AboutMe() {
     >
       <div className="about-me-page-container">
         <div className="about-me-scroll-section-1">
-          <AboutMeHeader />
-          <AboutMeHeader />
-          <AboutMeHeader />
-          <AboutMeHeader />
           <AboutMeLanding />
         </div>
 

@@ -5,11 +5,8 @@ function DesignHeader() {
     <div className="design-section">
       <div className="design-title-container">
         <span>
-          D<span className="indent">E</span>S<span className="indent">I</span>N
-          <span className="indent">G</span>
-          <span>&</span>U<span className="indent">I</span>/
-          <span className="indent">U</span>
-          <span>X</span>
+          F<span className="indent">R</span>O<span className="indent">U</span>N
+          <span className="indent">T</span>E<span className="indent">N</span>D
         </span>
       </div>
     </div>
