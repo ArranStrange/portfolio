@@ -1,4 +1,3 @@
-import AboutMeHeader from "./about-me-header";
 import AboutMeLanding from "./about-me-landing";
 import { motion } from "framer-motion";
 import AboutMeBottom from "./about-me-bottom";

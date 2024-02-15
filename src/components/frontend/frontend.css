@@ -16,7 +16,7 @@
   background-color: #141213;
   font-family: "Source Code Pro", monospace;
   justify-content: center;
-  color: rgb(240, 240, 240);
+  color: rgb(247, 238, 227);
   width: auto;
   height: 95lvh;
   /* border: #fff solid 5px; */
@@ -68,7 +68,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: white;
+  background-color: rgb(247, 238, 227);
   height: 95lvh;
   width: 100%;
   /* border: 6px solid green; */
@@ -93,7 +93,7 @@
   width: 100vlw;
   height: 100lvh;
   background-color: #141213;
-  color: #fff;
+  color: rgb(247, 238, 227);
 }
 
 .frontend-bottom-content {
@@ -107,7 +107,7 @@
   margin-top: -50px;
   width: 60%;
   border-radius: 30px;
-  border: solid 2px white;
+  border: solid 2px rgb(247, 238, 227);
 }
 .description {
   max-width: 100%;
