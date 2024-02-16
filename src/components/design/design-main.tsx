@@ -1,5 +1,4 @@
-import DesignBody from "./design-body";
-import DesignHeader from "./design-header";
+import DesignLanding from "./design-landing";
 import DesignMiddle from "./design-middle";
 import { motion } from "framer-motion";
 
@@ -15,12 +14,14 @@ function Design() {
         ease: [0, 0.71, 0.2, 1.01],
       }}
     >
-      <DesignHeader />
-      <DesignHeader />
-      <DesignHeader />
-      <DesignHeader />
-      <DesignMiddle />
-      <DesignBody />
+      <div className="design-page-container">
+        <div className="scroll-section">
+          <DesignLanding />
+        </div>
+        <div className="scroll-section">
+          <DesignMiddle />
+        </div>
+      </div>
     </motion.div>
   );
 }

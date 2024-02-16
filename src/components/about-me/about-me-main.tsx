@@ -17,15 +17,15 @@ function AboutMe() {
       }}
     >
       <div className="about-me-page-container">
-        <div className="about-me-scroll-section-1">
+        <div className="scroll-section">
           <AboutMeLanding />
         </div>
 
-        <div className="about-me-scroll-section-2">
+        <div className="scroll-section">
           <AboutMeMiddle />
         </div>
 
-        <div className="about-me-scroll-section-3">
+        <div className="scroll-section">
           <AboutMeBottom />
         </div>
       </div>

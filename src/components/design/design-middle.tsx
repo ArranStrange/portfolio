@@ -1,26 +1,59 @@
 import "./design.css";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 function DesignMiddle() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="design-middle-container">
-      <div className="design-skills-left">
-        <ul>Adobe Photoshop</ul>
-        <ul>Adobe Illustrator</ul>
-        <ul>Figma</ul>
-      </div>
-      <div className="design-image">
-        <img
-          src="https://i.pinimg.com/564x/47/33/e4/4733e41a7da0780e53bd2129a5975dcb.jpg"
-          className="design-photo"
-          alt="portrait"
-        />
-      </div>
-      <div className="design-skills-right">
-        <ul>CSS</ul>
-        <ul>Tailwind</ul>
-        <ul>SASS</ul>
-      </div>
-    </div>
+    <motion.div
+      className="clipped-text design-white-container scroll-section"
+      ref={ref}
+    >
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1 }}
+        style={{ marginTop: 50 }}
+        className="title-right"
+      >
+        CARDIFF
+      </motion.h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="title-right"
+      >
+        BASED
+      </motion.h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
+        className="title-right"
+      >
+        FRONTEND
+      </motion.h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+        className="title-right"
+      >
+        DEVELOPER
+      </motion.h1>
+    </motion.div>
   );
 }
 

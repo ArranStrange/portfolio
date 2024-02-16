@@ -4,100 +4,78 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
-// Motion Framer object to control visible & hidden
-const fadeInVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 2 } },
-  hidden: { opacity: 0, scale: 1 },
-};
-
 function FrontendMiddle() {
-  // import Motion Framer useAnimation hook
-  // import inView from react-intersection-observer to ref view point - returns boolean true if in view, false if not.
   const controls = useAnimation();
   const [ref, inView] = useInView();
+
   useEffect(() => {
-    // if statement to set use object visible when useInView hoot return true
     if (inView) {
       controls.start("visible");
+    } else {
+      controls.start("hidden");
     }
-    // dependencies
   }, [controls, inView]);
 
   return (
-    <div className="frontend-white-container">
-      <div className="frontend-middle-text">
-        <motion.div
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={fadeInVariants}
-          className="frontend-middle-text"
-        >
-          <motion.h3
-            ref={ref}
-            initial={{ x: -1000, opacity: 1 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
-            transition={{ duration: 1, type: "tween", delay: inView ? 0 : 2 }}
-          >
-            HTML
-          </motion.h3>
-          <motion.h3
-            ref={ref}
-            initial={{ x: -2000, opacity: 1 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
-            transition={{ duration: 1, type: "tween", delay: 0.2 }}
-            style={{ marginTop: "-10px" }}
-          >
-            CSS
-          </motion.h3>
-          <motion.h3
-            ref={ref}
-            initial={{ x: -2000, opacity: 1 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
-            transition={{ duration: 1, type: "tween", delay: 0.4 }}
-            style={{ marginTop: "-10px" }}
-          >
-            TAILWIND
-          </motion.h3>
-          <motion.h3
-            ref={ref}
-            initial={{ x: -2000, opacity: 1 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
-            transition={{ duration: 1, type: "tween", delay: 0.6 }}
-            style={{ marginTop: "-10px" }}
-          >
-            JAVASCRIPT
-          </motion.h3>
-          <motion.h3
-            ref={ref}
-            initial={{ x: -2000, opacity: 1 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
-            transition={{ duration: 1, type: "tween", delay: 0.8 }}
-            style={{ marginTop: "-10px" }}
-          >
-            TYPESCRIPT
-          </motion.h3>
-          <motion.h3
-            ref={ref}
-            initial={{ x: -2000, opacity: 1 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -2000 }}
-            transition={{ duration: 1, type: "tween", delay: 0.1 }}
-            style={{ marginTop: "-10px" }}
-          >
-            REACT
-          </motion.h3>
-        </motion.div>
-      </div>
-      <motion.div
-        className="arrow"
-        initial={{ y: "-100vh", x: -20, opacity: 0 }}
-        animate={inView ? { y: 0, opacity: 1 } : { y: -1000 }}
-        transition={{ delay: 0.2, duration: 1, type: "tween" }}
-        style={{ marginTop: "-20px" }}
+    <motion.div className="clipped-text frontend-white-container" ref={ref}>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1 }}
+        style={{ marginTop: 50, fontSize: "9rem" }}
+        className="title-right"
       >
+        HTML
+      </motion.h2>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        style={{ fontSize: "9rem" }}
+        className="title-right"
+      >
+        CSS
+      </motion.h2>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
+        style={{ fontSize: "9rem" }}
+        className="title-right"
+      >
+        TAILWIND
+      </motion.h2>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+        style={{ fontSize: "9rem" }}
+        className="title-right"
+      >
+        REACT
+      </motion.h2>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.8 }}
+        style={{ fontSize: "9rem" }}
+        className="title-right"
+      >
+        TYPESCRIPT
+      </motion.h2>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 0.8 }}
+        style={{ fontSize: "9rem" }}
+        className="title-right"
+      >
+        JAVASCRIPT
+      </motion.h2>
+      <div>
         <MdOutlineKeyboardDoubleArrowDown className="arrow" />
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 }
 
