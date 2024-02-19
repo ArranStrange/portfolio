@@ -5,10 +5,38 @@ function AboutMeLanding() {
   return (
     <div className="about-me-landing-container">
       <motion.div className="title-container">
-        <h1 className="title-left landing-clipped-text">DESIGN</h1>
-        <h1 className="title-left landing-clipped-text">FOCUSED</h1>
-        <h1 className="title-left landing-clipped-text">FRONTEND</h1>
-        <h1 className="title-left landing-clipped-text">DEVELOPER</h1>
+        <motion.h1
+          initial={{ y: "-100vh", x: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, type: "tween" }}
+          className="title-left"
+        >
+          DESIGN
+        </motion.h1>
+        <motion.h1
+          initial={{ y: "-100vh", x: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, type: "tween" }}
+          className="title-left"
+        >
+          FOCUSED
+        </motion.h1>
+        <motion.h1
+          initial={{ y: "-100vh", x: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, type: "tween" }}
+          className="title-left"
+        >
+          FRONTEND
+        </motion.h1>
+        <motion.h1
+          initial={{ y: "-100vh", x: 300, opacity: 0 }}
+          animate={{ y: 0, opacity: 1, x: 0 }}
+          transition={{ duration: 0.2, type: "tween" }}
+          className="title-left"
+        >
+          DEVELOPER
+        </motion.h1>
       </motion.div>
     </div>
   );

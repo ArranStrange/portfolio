@@ -77,7 +77,6 @@
 }
 
 .title-right {
-  font-size: 12rem;
   margin-top: -20px;
   display: flex;
   flex-direction: column;
@@ -87,10 +86,8 @@
 
 @media screen and (max-width: 720px) {
   .title-left {
-    font-size: 4.5rem;
   }
   .title-right {
-    font-size: 4.5rem;
     margin-top: 3px;
   }
 }
@@ -104,7 +101,6 @@
   height: 710px;
   background-color: #141213;
   color: rgb(247, 238, 227);
-  font-size: 1rem;
 }
 
 .about-me-bottom-content {
@@ -117,6 +113,5 @@
 @media screen and (max-width: 768px) {
   .about-me-bottom-content {
     width: 80%;
-    font-size: 0.7rem;
   }
 }

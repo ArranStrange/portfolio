@@ -17,7 +17,10 @@ function FrontendMiddle() {
   }, [controls, inView]);
 
   return (
-    <motion.div className="clipped-text frontend-white-container" ref={ref}>
+    <motion.div
+      className="frontend-clipped-text frontend-white-container"
+      ref={ref}
+    >
       <motion.h2
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : { opacity: 0 }}

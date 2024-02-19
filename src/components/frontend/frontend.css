@@ -85,7 +85,7 @@
   z-index: -1; /* Place background behind text */
 }
 
-.clipped-text {
+.frontend-clipped-text {
   display: flex;
   justify-content: center;
   text-transform: uppercase;

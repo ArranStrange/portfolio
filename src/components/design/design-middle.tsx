@@ -2,6 +2,10 @@ import "./design.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import recordingTest from "./Assets/Screen Recording 2024-02-19 at 08.13.26.mov";
+import BrandingVideo from "./Assets/Branding.mp4";
+import WebVideo from "./Assets/Web.mp4";
+import PrintVideo from "./Assets/Print.mp4";
 
 function DesignMiddle() {
   const controls = useAnimation();
@@ -16,44 +20,107 @@ function DesignMiddle() {
   }, [controls, inView]);
 
   return (
-    <motion.div
-      className="clipped-text design-white-container scroll-section"
-      ref={ref}
-    >
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1 }}
-        style={{ marginTop: 50 }}
-        className="title-right"
+    <div className="design-white-container">
+      {/* ACCORDIAN */}
+      <motion.div
+        initial={{ x: 1500, opacity: 1 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 3, type: "tween" }}
+        className="accordion"
       >
-        CARDIFF
-      </motion.h1>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
-        className="title-right"
-      >
-        BASED
-      </motion.h1>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.4 }}
-        className="title-right"
-      >
-        FRONTEND
-      </motion.h1>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.6 }}
-        className="title-right"
-      >
-        DEVELOPER
-      </motion.h1>
-    </motion.div>
+        <div className="accordion-item">
+          <input
+            type="radio"
+            className="toggle"
+            name="accordion"
+            id="toggle1"
+          />
+          <div className="accordion-title">
+            <label htmlFor="toggle1">
+              <h4>SOCIALS</h4>
+            </label>
+          </div>
+          <div className="accordion-content">
+            <video
+              src={recordingTest}
+              autoPlay
+              muted
+              loop
+              className="accordion-video"
+            />
+          </div>
+        </div>
+
+        <div className="accordion-item">
+          <input
+            type="radio"
+            className="toggle"
+            name="accordion"
+            id="toggle2"
+          />
+          <div className="accordion-title">
+            <label htmlFor="toggle2">
+              <h4>WEB</h4>
+            </label>
+          </div>
+          <div className="accordion-content">
+            <video
+              src={WebVideo}
+              autoPlay
+              muted
+              loop
+              className="accordion-video"
+            />
+          </div>
+        </div>
+
+        <div className="accordion-item">
+          <input
+            type="radio"
+            className="toggle"
+            name="accordion"
+            id="toggle3"
+          />
+          <div className="accordion-title">
+            <label htmlFor="toggle3">
+              <h4>PRINT</h4>
+            </label>
+          </div>
+          <div className="accordion-content">
+            <video
+              src={PrintVideo}
+              autoPlay
+              muted
+              loop
+              className="accordion-video"
+            />
+          </div>
+        </div>
+
+        <div className="accordion-item">
+          <input
+            type="radio"
+            className="toggle"
+            name="accordion"
+            id="toggle4"
+          />
+          <div className="accordion-title">
+            <label htmlFor="toggle4">
+              <h4>BRANDING</h4>
+            </label>
+          </div>
+          <div className="accordion-content">
+            <video
+              src={BrandingVideo}
+              autoPlay
+              muted
+              loop
+              className="accordion-video"
+            />
+          </div>
+        </div>
+      </motion.div>
+    </div>
   );
 }
 

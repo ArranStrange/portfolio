@@ -4,6 +4,11 @@
   width: 100vw;
 }
 
+html {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -13,14 +18,13 @@ body {
 }
 
 h1 {
-  font-size: 15rem;
+  font-size: 10rem;
   line-height: 10%;
   font-weight: 900;
 }
 
 h2 {
   font-size: 8rem;
-  flex-shrink: 1;
   line-height: 5%;
   font-weight: 900;
 }
@@ -32,6 +36,7 @@ h3 {
   line-height: 10%;
   font-weight: 900;
 }
+
 h4 {
   display: flex;
   flex-shrink: 0.5;
@@ -58,7 +63,7 @@ li {
     line-height: 11%;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   h3 {
