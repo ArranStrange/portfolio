@@ -152,7 +152,7 @@ function DesignLanding() {
             transition={{ duration: 1, delay: 3.1 }}
             className="title-right"
           >
-            INDESIGN
+            MILANOTE
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0 }}
@@ -160,12 +160,20 @@ function DesignLanding() {
             transition={{ duration: 1, delay: 3.3 }}
             className="title-right"
           >
-            PHOTOSHOP
+            INDESIGN
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 1, delay: 3.6 }}
+            className="title-right"
+          >
+            PHOTOSHOP
+          </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 1, delay: 3.8 }}
             className="title-right"
           >
             LIGHTROOM

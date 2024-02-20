@@ -6,6 +6,7 @@ import "./frontend.css";
 import FrontendWeatherApp from "./frontend-WeatherApp";
 import FrontendSinNombre from "./frontend-SinNombre";
 import FrontendToDoList from "./frontend-ToDoList";
+import FrontendBottom from "./frontend-bottom";
 
 function Frontend() {
   return (
@@ -30,6 +31,9 @@ function Frontend() {
           <FrontendAbout />
         </div>
         <div className="scroll-section">
+          <FrontendBottom />
+        </div>
+        {/* <div className="scroll-section">
           <FrontendWeatherApp />
         </div>
         <div className="scroll-section">
@@ -37,7 +41,7 @@ function Frontend() {
         </div>
         <div className="scroll-section">
           <FrontendSinNombre />
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

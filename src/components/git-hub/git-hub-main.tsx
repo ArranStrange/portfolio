@@ -1,9 +1,6 @@
-import GitHubHeader from "./git-hub-header";
-import GitHubBody from "./git-hub-body";
 import GitHubLanding from "./git-hub-landing";
 import { motion } from "framer-motion";
 import GitHubMiddle from "./git-hub-middle";
-import GitHubBottom from "./git-hub-bottom";
 
 function GitHub() {
   return (
@@ -18,19 +15,11 @@ function GitHub() {
       }}
     >
       <div className="git-hub-page-container">
-        <div className="about-me-scroll-section-1">
-          <GitHubHeader />
-          <GitHubHeader />
-          <GitHubHeader />
-          <GitHubHeader />
+        <div className="scroll-section">
           <GitHubLanding />
-          <GitHubBody />
         </div>
-        <div className="about-me-scroll-section-2">
+        <div className="scroll-section">
           <GitHubMiddle />
-        </div>
-        <div className="about-me-scroll-section-3">
-          <GitHubBottom />
         </div>
       </div>
     </motion.div>

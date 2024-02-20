@@ -6,6 +6,7 @@ import recordingTest from "./Assets/Screen Recording 2024-02-19 at 08.13.26.mov"
 import BrandingVideo from "./Assets/Branding.mp4";
 import WebVideo from "./Assets/Web.mp4";
 import PrintVideo from "./Assets/Print.mp4";
+import SocialVideo from "./Assets/Socials.mp4";
 
 function DesignMiddle() {
   const controls = useAnimation();
@@ -42,7 +43,7 @@ function DesignMiddle() {
           </div>
           <div className="accordion-content">
             <video
-              src={recordingTest}
+              src={SocialVideo}
               autoPlay
               muted
               loop
