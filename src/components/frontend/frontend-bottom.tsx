@@ -73,6 +73,9 @@ export default function FrontendBottom() {
             src={WeatherAppVideo}
             autoPlay
             muted
+            loop
+            playsInline
+            controls={false}
             className="frontend-video"
           />
         </a>
@@ -86,6 +89,9 @@ export default function FrontendBottom() {
           <video
             src={TodoListVideo}
             autoPlay
+            loop
+            playsInline
+            controls={false}
             muted
             className="frontend-video"
           />
@@ -101,6 +107,9 @@ export default function FrontendBottom() {
             src={SinNombreVideo}
             autoPlay
             muted
+            loop
+            playsInline
+            controls={false}
             className="frontend-video"
           />
         </a>

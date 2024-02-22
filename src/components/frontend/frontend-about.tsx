@@ -34,10 +34,10 @@ function FrontendAbout() {
       >
         <p style={{ marginTop: "-50px", textAlign: "start" }}>
           My focus is to build great user-flow for beautiful applications. I
-          love minimalism and a clean UI and that goes the same for
-          functionality, I write my code as clearly and concisely. I enjoy
-          building software in the sweet spot where design and engineering meet
-          — products that look great but are also built well behind the scenes.
+          love minimalism and a clean UI; and that goes the same for
+          functionality, I write my code clearly and concisely. I enjoy building
+          software in the sweet spot where design and engineering meet —
+          products that look great but are also built well behind the scenes.
         </p>
       </motion.div>
       <motion.div

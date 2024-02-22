@@ -47,6 +47,8 @@ function DesignMiddle() {
               autoPlay
               muted
               loop
+              playsInline
+              controls={false}
               className="accordion-video"
             />
           </div>
@@ -70,6 +72,8 @@ function DesignMiddle() {
               autoPlay
               muted
               loop
+              playsInline
+              controls={false}
               className="accordion-video"
             />
           </div>
@@ -93,6 +97,8 @@ function DesignMiddle() {
               autoPlay
               muted
               loop
+              playsInline
+              controls={false}
               className="accordion-video"
             />
           </div>
@@ -116,6 +122,8 @@ function DesignMiddle() {
               autoPlay
               muted
               loop
+              playsInline
+              controls={false}
               className="accordion-video"
             />
           </div>

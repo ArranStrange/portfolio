@@ -72,6 +72,9 @@ function GitHubMiddle() {
             src={WeatherAppVideo}
             autoPlay
             muted
+            loop
+            playsInline
+            controls={false}
             className="git-hub-video"
           />
         </a>
@@ -82,7 +85,15 @@ function GitHubMiddle() {
 
       <div className="slides fade">
         <a href="https://github.com/ArranStrange/todo-list">
-          <video src={TodoListVideo} autoPlay muted className="git-hub-video" />
+          <video
+            src={TodoListVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls={false}
+            className="git-hub-video"
+          />
         </a>
         <div className="text">
           Todo List App using HTML, CSS, Typescript & React
