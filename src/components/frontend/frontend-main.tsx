@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 import FrontendMiddle from "./frontend-middle";
 import FrontendAbout from "./frontend-about";
 import "./frontend.css";
-import FrontendWeatherApp from "./frontend-WeatherApp";
-import FrontendSinNombre from "./frontend-SinNombre";
-import FrontendToDoList from "./frontend-ToDoList";
 import FrontendBottom from "./frontend-bottom";
 
 function Frontend() {
@@ -33,15 +30,6 @@ function Frontend() {
         <div className="scroll-section">
           <FrontendBottom />
         </div>
-        {/* <div className="scroll-section">
-          <FrontendWeatherApp />
-        </div>
-        <div className="scroll-section">
-          <FrontendToDoList />
-        </div>
-        <div className="scroll-section">
-          <FrontendSinNombre />
-        </div> */}
       </div>
     </motion.div>
   );

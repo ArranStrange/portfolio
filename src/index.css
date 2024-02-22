@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700;900&display=swap");
 .app {
   background-color: #141213;
-  width: 100vw;
 }
 
 html {
@@ -13,8 +12,6 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #141213;
-  font-family: "Source Code Pro", monospace;
-  z-index: 999;
 }
 
 h1 {
@@ -25,7 +22,7 @@ h1 {
 
 h2 {
   font-size: 8rem;
-  line-height: 5%;
+  line-height: 1%;
   font-weight: 900;
 }
 
@@ -47,7 +44,9 @@ h4 {
 
 p {
   display: flex;
-  font-size: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 li {
@@ -59,8 +58,8 @@ li {
 
 @media screen and (max-width: 720px) {
   h1 {
-    font-size: 8rem;
-    line-height: 11%;
+    font-size: 4rem;
+    line-height: 5%;
   }
   h2 {
     font-size: 2rem;
@@ -70,7 +69,9 @@ li {
     font-size: 2rem;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
   }
   li {
     font-size: 0.7rem;

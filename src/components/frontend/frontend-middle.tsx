@@ -21,60 +21,50 @@ function FrontendMiddle() {
       className="frontend-clipped-text frontend-white-container"
       ref={ref}
     >
-      <motion.h2
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1 }}
-        style={{ marginTop: 50, fontSize: "9rem" }}
-        className="title-right"
-      >
-        HTML
-      </motion.h2>
-      <motion.h2
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
-        style={{ fontSize: "9rem" }}
-        className="title-right"
-      >
-        CSS
-      </motion.h2>
-      <motion.h2
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.4 }}
-        style={{ fontSize: "9rem" }}
-        className="title-right"
-      >
-        TAILWIND
-      </motion.h2>
-      <motion.h2
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.6 }}
-        style={{ fontSize: "9rem" }}
-        className="title-right"
-      >
-        REACT
-      </motion.h2>
-      <motion.h2
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.8 }}
-        style={{ fontSize: "9rem" }}
-        className="title-right"
-      >
-        TYPESCRIPT
-      </motion.h2>
-      <motion.h2
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 1 }}
-        style={{ fontSize: "9rem" }}
-        className="title-right"
-      >
-        JAVASCRIPT
-      </motion.h2>
+      <div className="title-container">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
+          CSS
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
+          HTML
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+          REACT
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          TAILWIND
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+        >
+          TYPESCRIPT
+        </motion.h1>
+        {/* <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          JAVASCRIPT
+        </motion.h1> */}
+      </div>
       <motion.div
         className="arrow"
         initial={{ y: "-100vh", x: -20, opacity: 0 }}

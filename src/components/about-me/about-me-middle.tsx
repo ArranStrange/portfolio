@@ -17,39 +17,36 @@ function AboutMeMiddle() {
 
   return (
     <motion.div className="clipped-text about-me-white-container" ref={ref}>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1 }}
-        style={{ marginTop: 50 }}
-        className="title-right"
-      >
-        CSS
-      </motion.h1>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
-        className="title-right"
-      >
-        REACT
-      </motion.h1>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.4 }}
-        className="title-right"
-      >
-        TAILWIND
-      </motion.h1>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 0.6 }}
-        className="title-right"
-      >
-        TYPESCRIPT
-      </motion.h1>
+      <div className="title-container">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
+          CSS
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
+          REACT
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+          TAILWIND
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          TYPESCRIPT
+        </motion.h1>
+      </div>
     </motion.div>
   );
 }

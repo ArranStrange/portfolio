@@ -2,11 +2,12 @@
 .git-hub-page-container {
   position: relative;
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior-y: contain;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   height: 100vh;
-  width: 100lvw;
+  width: 100vw;
   /* border: #fff solid 5px; */
 }
 
@@ -26,7 +27,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: start;
   flex-direction: column;
   height: 95lvh;
   width: 100lvw;
@@ -37,9 +37,10 @@
 .heading-container {
   display: flex;
   justify-content: center;
-  align-items: end;
-  height: 40%;
+  align-items: center;
+  height: 30%;
   width: 100%;
+  /* border: solid 2px green; */
 }
 
 .git-hub-profile {
@@ -47,15 +48,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60%;
+  height: 100%;
+  width: 100vw;
   margin-bottom: 50px;
+  /* border: solid 2px green; */
+}
+
+.git-hub-chart {
+  width: 50%;
 }
 .git-hub-profile-picture {
-  width: 22%;
+  width: 10%;
   border-radius: 100px;
   margin-top: -140px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   filter: saturate(70%);
+}
+
+@media screen and (max-width: 720px) {
+  .git-hub-profile {
+    width: 70%;
+  }
+  .git-hub-chart {
+    width: 350px;
+  }
+  .git-hub-profile-picture {
+    width: 50%;
+  }
 }
 .arrow {
   position: absolute;
@@ -145,4 +164,25 @@
   z-index: -10;
   border-radius: 20px;
   filter: saturate(0.8) sepia(05%);
+}
+@media screen and (max-width: 720px) {
+  .git-hub-video {
+    height: 500px;
+    width: 100%;
+  }
+  .git-hub-white-container .prev,
+  .git-hub-white-container .next {
+    top: 40%;
+    transform: translateY(-50%);
+    margin: 0px;
+  }
+
+  .arrow-icon,
+  .arrow-icon svg {
+    color: rgb(
+      247,
+      238,
+      227
+    ) !important; /* Use !important to ensure the color change takes precedence */
+  }
 }

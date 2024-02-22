@@ -1,3 +1,4 @@
+import DesignBottom from "./design-bottom";
 import DesignLanding from "./design-landing";
 import DesignMiddle from "./design-middle";
 import { motion } from "framer-motion";
@@ -20,6 +21,9 @@ function Design() {
         </div>
         <div className="scroll-section">
           <DesignMiddle />
+        </div>
+        <div className="scroll-section">
+          <DesignBottom />
         </div>
       </div>
     </motion.div>

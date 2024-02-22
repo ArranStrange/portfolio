@@ -1,38 +1,38 @@
 /* SMOOTH SCROLLING CONTROLS */
 .frontend-page-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-y: contain;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   height: 100vh;
-  width: 100lvw;
-  /* border: #fff solid 5px; */
-}
-
-/* FIRST SECTION */
-.frontend-section {
-  display: flex;
-  background-color: #141213;
-  justify-content: center;
-  color: rgb(247, 238, 227);
-  width: auto;
-  height: 95lvh;
+  width: 100%;
   /* border: #fff solid 5px; */
 }
 
 /* TITLE CONTAINER */
-.frontend-title-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+.frontend-landing-container {
   display: flex;
   justify-content: center;
-  text-align: start;
-  flex-direction: column;
-  height: 100%;
+  align-items: center;
+  flex-direction: row;
+  height: 93vh;
+  color: rgb(247, 238, 227);
+}
+
+.frontend-title-container {
+  width: 100%;
   margin-top: -50px;
-  /* border: #fff solid 5px; */
+}
+
+.title-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* border: solid #fff; */
 }
 
 .arrow {
@@ -70,8 +70,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 100lvh;
+  width: 100vw;
+  height: 100vh;
   color: #141213;
   /* border: solid green; */
   background-color: rgb(247, 238, 227);
@@ -96,15 +96,28 @@
   -webkit-text-fill-color: transparent;
 }
 
+.title-container {
+  margin-top: -200px;
+  width: 100%;
+  height: 100lvh;
+  text-align: end;
+}
+
 .frontend-middle-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   color: #141213;
-  width: 100lvw;
-  height: 90lvh;
+  width: 100%;
+  height: 90vh;
   /* border: 10px dotted black; */
+}
+
+@media screen and (max-width: 720px) {
+  .title-container {
+    margin-top: 150px;
+  }
 }
 
 /* BOTTOM SECTION */
@@ -112,8 +125,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vlw;
-  height: 100lvh;
+  width: 100vw;
+  height: 95vh;
   background-color: #141213;
   color: rgb(247, 238, 227);
 }
@@ -122,7 +135,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 70%;
 }
 
 .project-video {
@@ -151,9 +164,9 @@
   padding-top: 20px;
   align-items: center;
   flex-direction: column;
-  width: 100lvw;
-  height: 100lvh;
-  overflow: hidden;
+  width: 100vw; /* Corrected */
+  height: 100vh;
+  overflow: hidden; /* Added */
   color: #141213;
   mix-blend-mode: difference;
   /* border: solid green; */
@@ -162,7 +175,7 @@
 .frontend-bottom-container .prev,
 .frontend-bottom-container .next {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   height: 40px;
   width: 40px;
@@ -214,4 +227,49 @@
   z-index: -10;
   border-radius: 20px;
   filter: saturate(0.8) sepia(05%);
+}
+
+.slides:hover .frontend-video {
+  filter: brightness(0.5); /* Darken the video on hover */
+}
+
+.slides:hover .text {
+  display: block; /* Show text on hover */
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text {
+  display: none; /* Hide text by default */
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-52%, -50%);
+  color: white; /* Set text color to white */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1; /* Ensure text is above the video */
+}
+
+@media screen and (max-width: 720px) {
+  .frontend-video {
+    height: 500px;
+    width: 100%;
+  }
+  .frontend-bottom-container .prev,
+  .frontend-bottom-container .next {
+    top: 40%;
+    transform: translateY(-50%);
+    margin: 0px;
+  }
+
+  .arrow-icon,
+  .arrow-icon svg {
+    color: rgb(
+      247,
+      238,
+      227
+    ) !important; /* Use !important to ensure the color change takes precedence */
+  }
 }

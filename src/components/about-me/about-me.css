@@ -14,7 +14,7 @@
 
 .about-me-landing-container {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   width: 100vlw;
@@ -25,7 +25,6 @@
 
 .title-container {
   width: 100%;
-  margin-top: -50px;
 }
 
 .title-left {
@@ -49,7 +48,7 @@
 .about-me-white-container {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100lvh;
@@ -76,20 +75,11 @@
   -webkit-text-fill-color: transparent;
 }
 
-.title-right {
-  margin-top: -20px;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
+.title-container {
+  padding-top: 100px;
   width: 100%;
-}
-
-@media screen and (max-width: 720px) {
-  .title-left {
-  }
-  .title-right {
-    margin-top: 3px;
-  }
+  text-align: end;
+  /* border: solid green; */
 }
 
 /* BOTTOM SECTION */
@@ -104,14 +94,16 @@
 }
 
 .about-me-bottom-content {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Align items along the cross-axis */
+  margin-top: -100px;
   width: 50%;
+  text-align: start;
 }
 
 @media screen and (max-width: 768px) {
   .about-me-bottom-content {
-    width: 80%;
+    width: 70%;
+  }
+  .title-container {
+    padding-top: 0;
   }
 }

@@ -104,6 +104,7 @@ function GitHubMiddle() {
               color: "#141213",
               opacity: 0.9,
             }}
+            className="arrow-icon"
           />
         </motion.a>
         <motion.a
@@ -121,6 +122,7 @@ function GitHubMiddle() {
               color: "#141213",
               opacity: 0.9,
             }}
+            className="arrow-icon"
           />
         </motion.a>
       </div>

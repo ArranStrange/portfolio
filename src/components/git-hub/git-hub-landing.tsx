@@ -8,14 +8,14 @@ function GitHublanding() {
       <div className="heading-container">
         <motion.h1
           initial={{ y: "100vh", x: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, x: 0, opacity: 1 }}
           transition={{ duration: 1, type: "tween" }}
         >
           GIT
         </motion.h1>
         <motion.h1
           initial={{ y: "100vh", x: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, x: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 1, type: "tween" }}
         >
           HUB
@@ -36,6 +36,7 @@ function GitHublanding() {
           transition={{ delay: 1.4, duration: 1 }}
           src="https://ghchart.rshah.org/<141213>/arranstrange"
           alt="ArranStrange's Github chart"
+          className="git-hub-chart"
         />
       </div>
 

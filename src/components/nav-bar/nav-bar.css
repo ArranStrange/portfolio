@@ -5,7 +5,7 @@ nav {
   z-index: 999;
   display: block;
   flex-direction: column;
-  width: 100vw;
+  width: 100lvw;
   height: 25px;
   padding-bottom: 20px;
   background: #141213;

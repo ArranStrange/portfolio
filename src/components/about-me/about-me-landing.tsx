@@ -10,6 +10,7 @@ function AboutMeLanding() {
           animate={{ y: 0, opacity: 1, x: 0 }}
           transition={{ duration: 0.8, type: "tween" }}
           className="title-left"
+          style={{ marginTop: "175px" }}
         >
           DESIGN
         </motion.h1>

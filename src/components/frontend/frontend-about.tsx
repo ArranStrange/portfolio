@@ -32,14 +32,12 @@ function FrontendAbout() {
         variants={fadeInVariants}
         className="frontend-bottom-content"
       >
-        <p>
-          Hello there! I'm a versatile and enthusiastic conversationalist,
-          fluent in the language of technology and eager to assist you on your
-          digital journey. With a wealth of information at my disposal, my
-          knowledge spans from guiding you through the intricate world of Git
-          commands to helping you implement seamless sideways scrolling in your
-          React components. Passionate about enabling your success, I thrive on
-          providing clear, concise, and actionable insights.
+        <p style={{ marginTop: "-50px", textAlign: "start" }}>
+          My focus is to build great user-flow for beautiful applications. I
+          love minimalism and a clean UI and that goes the same for
+          functionality, I write my code as clearly and concisely. I enjoy
+          building software in the sweet spot where design and engineering meet
+          — products that look great but are also built well behind the scenes.
         </p>
       </motion.div>
       <motion.div

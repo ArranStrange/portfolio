@@ -32,15 +32,9 @@ function AboutMeBottom() {
         className="about-me-bottom-content"
       >
         <p>
-          In September 2023 I decided to dive into a career change. I aimed to
-          take on the challenge of converting my knowledge of design and my
-          experience in Photoshop, InDesign and other Adobe software into
-          creating beautiful and practical applications. Using all of my spare
-          time to study and put my newly learnt skills to work I’ve managed to
-          not only create a whole array of web applications and static sites,
-          but have also become a confident React.js developer. I’m currently
-          looking to step into my first Developer role, Recruiters and Hiring
-          Managers please don’t hesitate to contact me.
+          I'm a creative developer that specialises in bringing web to life
+          through enticing design, natural animation and fluid functionality,
+          primarily through CSS, Typescript & React.
         </p>
       </motion.div>
     </div>

@@ -124,6 +124,7 @@ export default function FrontendBottom() {
               color: "#141213",
               opacity: 0.9,
             }}
+            className="arrow-icon"
           />
         </motion.a>
         <motion.a
@@ -141,6 +142,7 @@ export default function FrontendBottom() {
               color: "#141213",
               opacity: 0.9,
             }}
+            className="arrow-icon"
           />
         </motion.a>
       </div>
