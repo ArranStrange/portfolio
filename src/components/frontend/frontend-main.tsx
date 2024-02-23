@@ -4,6 +4,8 @@ import FrontendMiddle from "./frontend-middle";
 import FrontendAbout from "./frontend-about";
 import "./frontend.css";
 import FrontendBottom from "./frontend-bottom";
+import FrontendAbout2 from "./frontend-about-2";
+import FrontendAbout3 from "./frontend-about-3";
 
 function Frontend() {
   return (
@@ -26,6 +28,12 @@ function Frontend() {
         </div>
         <div className="scroll-section">
           <FrontendAbout />
+        </div>
+        <div className="scroll-section">
+          <FrontendAbout2 />
+        </div>
+        <div className="scroll-section">
+          <FrontendAbout3 />
         </div>
         <div className="scroll-section">
           <FrontendBottom />

@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 93vh;
+  height: 96vh;
   color: rgb(247, 238, 227);
 }
 
@@ -125,6 +125,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100vw;
   height: 95vh;
   background-color: #141213;
@@ -150,12 +151,6 @@
   justify-content: center;
   text-align: center;
   /* border: solid 3px white; */
-}
-
-@media screen and (max-width: 720px) {
-  .project-video {
-    width: 95%;
-  }
 }
 
 .frontend-bottom-container {
@@ -223,7 +218,8 @@
 }
 
 .frontend-video {
-  width: 70%;
+  width: 73%;
+  margin-top: -15px;
   z-index: -10;
   border-radius: 20px;
   filter: saturate(0.8) sepia(05%);
@@ -254,6 +250,7 @@
 
 @media screen and (max-width: 720px) {
   .frontend-video {
+    margin-top: 50px;
     height: 500px;
     width: 100%;
   }

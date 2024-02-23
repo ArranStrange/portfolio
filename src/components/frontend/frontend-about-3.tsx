@@ -4,17 +4,19 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
-function FrontendAbout() {
+function FrontendAbout3() {
+  // import Motion Framer useAnimation hook
+  // import inView from react-intersection-observer to ref view point - returns boolean true if in view, false if not.
   const controls = useAnimation();
   const [ref, inView] = useInView();
-
   useEffect(() => {
+    // if statement to set use object visible when useInView hoot return true
     if (inView) {
       controls.start("visible");
-    } else {
-      controls.start("hidden");
     }
+    // dependencies
   }, [controls, inView]);
+
   return (
     <div className="frontend-black-container">
       <motion.div
@@ -25,11 +27,11 @@ function FrontendAbout() {
         className="frontend-bottom-content"
       >
         <p style={{ marginTop: "-50px", textAlign: "start" }}>
-          My focus is to build great user-flow for beautiful applications. I
-          love minimalism, a clean UI and striking font; my aim is to bring
-          seamless functionality to enticing user journeys.
+          I'm always looking to learn new frameworks and languages to expand my
+          skillset and aid me in tackling new challenges.
         </p>
       </motion.div>
+
       <motion.div
         className="arrow"
         initial={{ y: "-100vh", x: -20, opacity: 0 }}
@@ -43,4 +45,4 @@ function FrontendAbout() {
   );
 }
 
-export default FrontendAbout;
+export default FrontendAbout3;

@@ -46,6 +46,13 @@ function AboutMeMiddle() {
         >
           TYPESCRIPT
         </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+        >
+          JAVASCRIPT
+        </motion.h1>
       </div>
     </motion.div>
   );

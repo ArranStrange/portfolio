@@ -32,9 +32,9 @@ function AboutMeBottom() {
         className="about-me-bottom-content"
       >
         <p>
-          I'm a creative developer that specialises in bringing web to life
-          through enticing design, natural animation and fluid functionality,
-          primarily through CSS, Typescript & React.
+          I'm a creative developer that specialises in bringing web to life. My
+          aim is to create enticing designs, natural animations and fluid
+          functionality.
         </p>
       </motion.div>
     </div>
