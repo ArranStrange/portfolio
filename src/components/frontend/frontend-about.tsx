@@ -25,9 +25,9 @@ function FrontendAbout() {
         className="frontend-bottom-content"
       >
         <p style={{ marginTop: "-50px", textAlign: "start" }}>
-          My focus is to build great user-flow for beautiful applications. I
-          love minimalism, a clean UI and striking font; my aim is to bring
-          seamless functionality to enticing user journeys.
+          My aim is to build great user-flow for beautiful applications. I love
+          minimalism, a clean UI and striking font; I focus on bringing seamless
+          functionality to enticing user journeys.
         </p>
       </motion.div>
       <motion.div

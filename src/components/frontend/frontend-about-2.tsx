@@ -27,7 +27,7 @@ function FrontendAbout2() {
         className="frontend-bottom-content"
       >
         <p style={{ marginTop: "-50px", textAlign: "start" }}>
-          I live to build applications in the sweet spot where design and
+          I thrice building applications in the sweet spot where design and
           engineering meet — products that look great but are also built well
           behind the scenes.
         </p>

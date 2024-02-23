@@ -25,7 +25,7 @@ function IntroGif() {
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
           transition={{
-            delay: 4,
+            delay: 2.5,
             duration: 0.2,
           }}
         >

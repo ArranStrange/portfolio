@@ -43,7 +43,7 @@ function AboutMeBottom() {
         animate={inView ? { y: 0, opacity: 1 } : { y: 0 }}
         transition={{ delay: 0.8, duration: 1, type: "tween" }}
       >
-        <a href="./design" className="to-top">
+        <a href="./about-me" className="to-top">
           TO TOP
         </a>
       </motion.div>

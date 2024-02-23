@@ -130,7 +130,7 @@ li {
   height: calc(100vh + 20px);
   z-index: 100;
   transition: ease-out 1s;
-  background-color: #0b1114;
+  background-color: #141213;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
