@@ -5,7 +5,7 @@ import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 function FrontendHeader() {
   return (
     <>
-      <div className="frontend-landing-container">
+      <div id="frontend-landing" className="frontend-landing-container">
         <div className="frontend-title-container">
           <motion.h1
             initial={{ y: "100vh", x: -20, opacity: 0 }}
@@ -31,6 +31,7 @@ function FrontendHeader() {
           transition={{ delay: 0.2, duration: 1, type: "tween" }}
           style={{ marginTop: "-20px" }}
         >
+          {" "}
           <MdOutlineKeyboardDoubleArrowDown className="arrow" />
         </motion.div>
       </div>

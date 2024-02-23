@@ -18,6 +18,7 @@ function FrontendMiddle() {
 
   return (
     <motion.div
+      id="frontend-middle"
       className="frontend-clipped-text frontend-white-container"
       ref={ref}
     >

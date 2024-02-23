@@ -18,7 +18,7 @@ function FrontendAbout2() {
   }, [controls, inView]);
 
   return (
-    <div className="frontend-white-container">
+    <div id="frontend-about-2" className="frontend-white-container">
       <motion.div
         ref={ref}
         initial={{ opacity: 0 }}

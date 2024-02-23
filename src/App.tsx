@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import NavBar from "./components/nav-bar/nav-bar";
+import Intro from "./into";
 import ArranStrangeFavicon from "./favicon.ico";
 import AnimatedRoutes from "./components/hooks/animated-routes/animated-routes";
 import Favicon from "react-favicon";
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <Intro />
       <Favicon url={faviconUrl} />
       <NavBar />
       <AnimatedRoutes />

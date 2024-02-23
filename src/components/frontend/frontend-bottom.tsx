@@ -66,7 +66,7 @@ export default function FrontendBottom() {
   }
 
   return (
-    <div className="frontend-bottom-container" ref={ref}>
+    <div id="frontend-bottom" className="frontend-bottom-container" ref={ref}>
       <div className="slides fade">
         <a href="https://github.com/ArranStrange/weather-api-app">
           <video
@@ -161,6 +161,15 @@ export default function FrontendBottom() {
         <span className="dot" onClick={() => currentSlide(2)}></span>
         <span className="dot" onClick={() => currentSlide(3)}></span>
       </div>
+      <motion.div
+        initial={{ y: 200, opacity: 0 }}
+        animate={inView ? { y: 0, opacity: 1 } : { y: 0 }}
+        transition={{ delay: 0.8, duration: 1, type: "tween" }}
+      >
+        <a href="./frontend" className="to-top">
+          TO TOP
+        </a>
+      </motion.div>
     </div>
   );
 }

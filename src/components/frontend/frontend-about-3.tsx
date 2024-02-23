@@ -18,7 +18,7 @@ function FrontendAbout3() {
   }, [controls, inView]);
 
   return (
-    <div className="frontend-black-container">
+    <div id="frontend-about-3" className="frontend-black-container">
       <motion.div
         ref={ref}
         initial={{ opacity: 0 }}

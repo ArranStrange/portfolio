@@ -83,3 +83,99 @@ li {
   position: relative;
   scroll-snap-align: start;
 }
+
+.to-top {
+  padding: 10px;
+  border: solid 2px rgb(247, 238, 227);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #141213;
+  color: rgb(247, 238, 227);
+  font-weight: 600;
+  position: fixed;
+  bottom: 0; /* Align to the bottom */
+  left: 80%;
+  transform: translateX(-80%);
+  z-index: 9999;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+  .to-top {
+    bottom: 0; /* Align to the bottom */
+    left: 80%; /* Align to the center */
+    transform: translateX(80%); /* Center horizontally */
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.6s ease-out 2.9s;
+}
+
+.intro-pop-up-div {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: calc(100vh + 20px);
+  z-index: 100;
+  transition: ease-out 1s;
+  background-color: #0b1114;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.intro-pop-up {
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+.into-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  color: rgb(247, 238, 227);
+  /* border: solid green; */
+  background-color: rgb(247, 238, 227);
+  z-index: 998;
+}
+.into-pop-up::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #141213;
+  z-index: -1; /* Place background behind text */
+}
+
+.pop-up-clipped-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background: url(https://gifdb.com/images/high/computer-system-coding-j3szfjv9fwb5at9x.gif);
+  filter: invert(100%) saturate(0%) sepia(05%);
+  background-size: contain;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 200px;
+  /* border: solid green; */
+}

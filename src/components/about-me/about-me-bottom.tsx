@@ -37,6 +37,16 @@ function AboutMeBottom() {
           functionality.
         </p>
       </motion.div>
+      <motion.div
+        ref={ref}
+        initial={{ y: 200, opacity: 0 }}
+        animate={inView ? { y: 0, opacity: 1 } : { y: 0 }}
+        transition={{ delay: 0.8, duration: 1, type: "tween" }}
+      >
+        <a href="./design" className="to-top">
+          TO TOP
+        </a>
+      </motion.div>
     </div>
   );
 }

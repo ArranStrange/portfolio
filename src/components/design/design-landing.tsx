@@ -30,42 +30,42 @@ function DesignLanding() {
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 0.6 }}
+            transition={{ duration: 0.2, delay: 0.4 }}
           >
             D
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 0.8 }}
+            transition={{ duration: 0.2, delay: 0.6 }}
           >
             E
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 1 }}
+            transition={{ duration: 0.2, delay: 0.8 }}
           >
             S
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 1.2 }}
+            transition={{ duration: 0.2, delay: 1 }}
           >
             I
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 1.4 }}
+            transition={{ duration: 0.2, delay: 1.2 }}
           >
             G
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 1.6 }}
+            transition={{ duration: 0.2, delay: 1.4 }}
           >
             N
           </motion.h2>
@@ -74,42 +74,42 @@ function DesignLanding() {
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 1.8 }}
+            transition={{ duration: 0.2, delay: 1.6 }}
           >
             &
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 2 }}
+            transition={{ duration: 0.2, delay: 1.8 }}
           >
             U
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 2.2 }}
+            transition={{ duration: 0.2, delay: 2 }}
           >
             I
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 2.4 }}
+            transition={{ duration: 0.2, delay: 2.2 }}
           >
             /
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 2.6 }}
+            transition={{ duration: 0.2, delay: 2.4 }}
           >
             U
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 1 }}
-            transition={{ duration: 0.2, delay: 2.8 }}
+            transition={{ duration: 0.2, delay: 2.6 }}
           >
             X
           </motion.h2>
@@ -119,35 +119,35 @@ function DesignLanding() {
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2.9 }}
+          transition={{ duration: 1, delay: 2.8 }}
         >
           FIGMA
         </motion.h1>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 3.1 }}
+          transition={{ duration: 1, delay: 3 }}
         >
           MILANOTE
         </motion.h1>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 3.3 }}
+          transition={{ duration: 1, delay: 3.2 }}
         >
           INDESIGN
         </motion.h1>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 3.6 }}
+          transition={{ duration: 1, delay: 3.4 }}
         >
           PHOTOSHOP
         </motion.h1>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 3.8 }}
+          transition={{ duration: 1, delay: 3.6 }}
         >
           LIGHTROOM
         </motion.h1>

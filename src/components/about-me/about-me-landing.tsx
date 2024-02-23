@@ -8,7 +8,7 @@ function AboutMeLanding() {
         <motion.h1
           initial={{ y: "-100vh", x: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, type: "tween" }}
+          transition={{ delay: 4.2, duration: 0.8, type: "tween" }}
           className="title-left"
           style={{ marginTop: "175px" }}
         >
@@ -17,7 +17,7 @@ function AboutMeLanding() {
         <motion.h1
           initial={{ y: "-100vh", x: 200, opacity: 0 }}
           animate={{ y: 0, opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, type: "tween" }}
+          transition={{ delay: 4.2, duration: 0.6, type: "tween" }}
           className="title-left"
         >
           FOCUSED
@@ -25,7 +25,7 @@ function AboutMeLanding() {
         <motion.h1
           initial={{ y: "-100vh", x: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1, x: 0 }}
-          transition={{ duration: 0.4, type: "tween" }}
+          transition={{ delay: 4.2, duration: 0.4, type: "tween" }}
           className="title-left"
         >
           FRONTEND
@@ -33,7 +33,7 @@ function AboutMeLanding() {
         <motion.h1
           initial={{ y: "-100vh", x: 300, opacity: 0 }}
           animate={{ y: 0, opacity: 1, x: 0 }}
-          transition={{ duration: 0.2, type: "tween" }}
+          transition={{ delay: 4.2, duration: 0.2, type: "tween" }}
           className="title-left"
         >
           DEVELOPER
